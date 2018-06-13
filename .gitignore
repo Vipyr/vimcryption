@@ -117,7 +117,7 @@ venv*/
 *.ctags
 
 # pylint
-.pylint-report
+pylint-report
 
 # PyCharm
 .idea/
