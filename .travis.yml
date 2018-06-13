@@ -14,11 +14,11 @@ python:
 git:
   depth: false
 
-before_script:
-  python travis_setup.py install
+install:
+  pip install -r test_requirements.txt
 
 script:
-  nose2 --coverage . -s test
+  coverage run -m unittest discover -s test
 
 after_success:
   - codecov
